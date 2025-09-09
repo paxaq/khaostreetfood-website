@@ -42,6 +42,7 @@ const dishes = [
 ]
 
 export function FeaturedDishes() {
+  const prefix = process.env.NEXT_PUBLIC_BASE_PATH || ""
   return (
     <section className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
@@ -59,7 +60,7 @@ export function FeaturedDishes() {
             <Card key={index} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
               <div className="relative overflow-hidden rounded-t-lg">
                 <img
-                  src={dish.image || "/placeholder.svg"}
+                  src={`${prefix}${dish.image || "/placeholder.svg"}`}
                   alt={dish.name}
                   className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
                 />
