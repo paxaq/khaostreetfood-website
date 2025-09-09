@@ -20,6 +20,9 @@ const nextConfig = {
   // Prefix assets/links when deploying to GitHub Pages project sites
   basePath: ghBasePath || undefined,
   assetPrefix: ghBasePath || undefined,
+  env: {
+    NEXT_PUBLIC_BASE_PATH: ghBasePath || '',
+  },
 }
 
 export default nextConfig
