@@ -31,13 +31,13 @@ export function Footer() {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-secondary mt-1 flex-shrink-0" />
                 <div>
-                  <p className="text-gray-300">123 Restaurant Lane</p>
-                  <p className="text-gray-300">City, State 12345</p>
+                  <p className="text-gray-300">205 Richmond road</p>
+                  <p className="text-gray-300">Ottawa, K1Z 6W4</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-secondary" />
-                <p className="text-gray-300">(555) 123-4567</p>
+                <p className="text-gray-300">(613) 722-6464</p>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-secondary" />
@@ -51,16 +51,20 @@ export function Footer() {
             <h3 className="text-xl font-semibold mb-6">Opening Hours</h3>
             <div className="space-y-2">
               <div className="flex justify-between">
-                <span className="text-gray-300">Monday - Thursday</span>
+                <span className="text-gray-300">Monday</span>
+                <span className="text-secondary">4:00 PM - 10:00 PM</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-gray-300">Tuesday - Friday</span>
+                <span className="text-secondary">12:00 AM - 10:00 PM</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-gray-300">Saturday</span>
                 <span className="text-secondary">11:00 AM - 10:00 PM</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-gray-300">Friday - Saturday</span>
-                <span className="text-secondary">11:00 AM - 11:00 PM</span>
-              </div>
-              <div className="flex justify-between">
                 <span className="text-gray-300">Sunday</span>
-                <span className="text-secondary">12:00 PM - 9:00 PM</span>
+                <span className="text-secondary">11:00 AM - 9:00 PM</span>
               </div>
             </div>
           </div>
@@ -92,7 +96,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-gray-700 mt-12 pt-8 text-center">
-          <p className="text-gray-300">© 2024 Khao Street Food. All rights reserved. | Follow us @khaostreetfood</p>
+          <p className="text-gray-300">© 2025 Khao Street Food. All rights reserved. | Follow us @khaostreetfood</p>
         </div>
       </div>
     </footer>
