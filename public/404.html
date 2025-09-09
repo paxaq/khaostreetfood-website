@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Redirecting…</title>
+    <meta http-equiv="refresh" content="0; url=/" />
+    <script>
+      (function () {
+        try {
+          var parts = (window.location.pathname || "/").split("/");
+          // For project pages, first segment is the repo name
+          var base = "/" + (parts[1] || "") + "/";
+          if (base === "//") base = "/";
+          window.location.replace(base);
+        } catch (e) {
+          window.location.replace("/");
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <p>Redirecting…</p>
+  </body>
+  </html>
