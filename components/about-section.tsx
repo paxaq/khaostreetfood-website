@@ -1,5 +1,4 @@
 import { Card, CardContent } from "@/components/ui/card"
-import Image from "next/image"
 import { Award, Users, Clock, Heart } from "lucide-react"
 
 const stats = [
@@ -45,15 +44,16 @@ export function AboutSection() {
           {/* Image */}
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden">
-              <div className="relative w-full h-[600px]">
-                <Image
-                  src="/thai-chef-cooking-in-traditional-kitchen-with-wok-.jpg"
-                  alt="Thai chef cooking"
-                  fill
-                  className="object-cover"
-                  priority
-                />
-              </div>
+              {(() => {
+                const prefix = process.env.NEXT_PUBLIC_BASE_PATH || ""
+                return (
+                  <img
+                    src={`${prefix}/thai-chef-cooking-in-traditional-kitchen-with-wok-.jpg`}
+                    alt="Thai chef cooking"
+                    className="w-full h-[600px] object-cover"
+                  />
+                )
+              })()}
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
             </div>
 

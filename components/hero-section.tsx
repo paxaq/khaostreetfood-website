@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button"
-import Image from "next/image"
 import { ArrowRight, Star } from "lucide-react"
 
 export function HeroSection() {
@@ -7,13 +6,16 @@ export function HeroSection() {
     <section id="home" className="relative min-h-screen flex items-center">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <Image
-          src="/bustling-thai-street-food-market-with-colorful-sta.jpg"
-          alt="Thai street food market"
-          fill
-          className="object-cover"
-          priority
-        />
+        {(() => {
+          const prefix = process.env.NEXT_PUBLIC_BASE_PATH || ""
+          return (
+            <img
+              src={`${prefix}/bustling-thai-street-food-market-with-colorful-sta.jpg`}
+              alt="Thai street food market"
+              className="w-full h-full object-cover"
+            />
+          )
+        })()}
         <div className="absolute inset-0 bg-black/40"></div>
       </div>
 
