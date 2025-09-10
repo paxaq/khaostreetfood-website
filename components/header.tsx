@@ -14,7 +14,7 @@ export function Header() {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <div className="text-2xl font-bold text-primary">KHAO</div>
-            <div className="text-sm text-muted-foreground">Street Food Thailand</div>
+            <div className="text-sm text-muted-foreground">Khao (Street Food Thailand and Bar)</div>
           </div>
 
           {/* Desktop Navigation */}
@@ -37,7 +37,7 @@ export function Header() {
           <div className="hidden md:flex items-center space-x-4">
             <div className="flex items-center space-x-2 text-sm text-muted-foreground">
               <Phone className="h-4 w-4" />
-              <span>(555) 123-4567</span>
+              <span>(613) 722-6464</span>
             </div>
             <Button variant="outline" size="sm">
               Order Online

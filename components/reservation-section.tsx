@@ -75,12 +75,12 @@ export function ReservationSection() {
 
           {/* Reservation Form */}
           <Card className="shadow-xl">
-            <CardHeader>
+            <CardHeader >
               <CardTitle className="text-2xl text-center">Make a Reservation</CardTitle>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
                   <div>
                     <Label htmlFor="name">Full Name</Label>
                     <Input
@@ -134,6 +134,18 @@ export function ReservationSection() {
                         <SelectValue placeholder="Select time" />
                       </SelectTrigger>
                       <SelectContent>
+                        <SelectItem value="11:00">11:00 AM</SelectItem>
+                        <SelectItem value="11:30">11:30 AM</SelectItem>
+                        <SelectItem value="12:00">12:00 PM</SelectItem>
+                        <SelectItem value="12:30">12:30 PM</SelectItem>
+                        <SelectItem value="13:00">1:00 PM</SelectItem>
+                        <SelectItem value="13:30">1:30 PM</SelectItem>
+                        <SelectItem value="14:00">2:00 PM</SelectItem>
+                        <SelectItem value="14:30">2:30 PM</SelectItem>
+                        <SelectItem value="15:00">3:00 PM</SelectItem>
+                        <SelectItem value="15:30">3:30 PM</SelectItem>
+                        <SelectItem value="16:00">4:00 PM</SelectItem>
+                        <SelectItem value="16:30">4:30 PM</SelectItem>
                         <SelectItem value="17:00">5:00 PM</SelectItem>
                         <SelectItem value="17:30">5:30 PM</SelectItem>
                         <SelectItem value="18:00">6:00 PM</SelectItem>
@@ -147,7 +159,7 @@ export function ReservationSection() {
                     </Select>
                   </div>
                   <div>
-                    <Label htmlFor="guests">Guests</Label>
+                    <Label htmlFor="guests" className="font-bold mb-1.5">Guests</Label>
                     <Select onValueChange={(value) => setFormData({ ...formData, guests: value })}>
                       <SelectTrigger>
                         <SelectValue placeholder="# of guests" />
@@ -158,9 +170,7 @@ export function ReservationSection() {
                         <SelectItem value="3">3 Guests</SelectItem>
                         <SelectItem value="4">4 Guests</SelectItem>
                         <SelectItem value="5">5 Guests</SelectItem>
-                        <SelectItem value="6">6 Guests</SelectItem>
-                        <SelectItem value="7">7 Guests</SelectItem>
-                        <SelectItem value="8">8+ Guests</SelectItem>
+                        <SelectItem value="6">6+ Guests</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>

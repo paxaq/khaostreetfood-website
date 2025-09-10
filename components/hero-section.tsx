@@ -22,14 +22,14 @@ export function HeroSection() {
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-2xl text-white">
-          <div className="flex items-center space-x-2 mb-4">
+          {/* <div className="flex items-center space-x-2 mb-4">
             <div className="flex items-center space-x-1">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} className="h-5 w-5 fill-secondary text-secondary" />
               ))}
             </div>
             <span className="text-secondary font-semibold">4.9/5 Rating</span>
-          </div>
+          </div> */}
 
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-balance">
             A TASTE OF

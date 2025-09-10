@@ -1,5 +1,6 @@
 import { MapPin, Phone, Mail, Instagram, Facebook, Twitter } from "lucide-react"
-
+import React from "react"
+import { BsTiktok, BsFacebook, BsInstagram} from "react-icons/bs"
 export function Footer() {
   return (
     <footer id="contact" className="bg-foreground text-white py-16">
@@ -12,14 +13,14 @@ export function Footer() {
               Authentic Thai street food experience bringing the vibrant flavors of Thailand to your table.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-secondary transition-colors">
-                <Instagram className="h-6 w-6" />
+              <a href="https://www.instagram.com/khaostreetfood?igsh=cTA4d3Zqa256cnQ0&utm_source=qr" className="text-gray-300 hover:text-secondary transition-colors">
+                <BsInstagram className="h-6 w-6" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-secondary transition-colors">
-                <Facebook className="h-6 w-6" />
+              <a href="https://www.facebook.com/share/161Y9GK4jj/?mibextid=wwXIfr" className="text-gray-300 hover:text-secondary transition-colors">
+                <BsFacebook className="h-6 w-6" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-secondary transition-colors">
-                <Twitter className="h-6 w-6" />
+              <a href="https://www.tiktok.com/@khao.thai.street?_t=ZM-8vHq6nbHcHd&_r=1" className="text-gray-300 hover:text-secondary transition-colors">
+                <BsTiktok className="h-6 w-6" />
               </a>
             </div>
           </div>
@@ -56,7 +57,7 @@ export function Footer() {
               </div>
               <div className="flex justify-between">
                 <span className="text-gray-300">Tuesday - Friday</span>
-                <span className="text-secondary">12:00 AM - 10:00 PM</span>
+                <span className="text-secondary">12:00 PM - 10:00 PM</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-gray-300">Saturday</span>
